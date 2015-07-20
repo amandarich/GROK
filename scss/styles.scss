@@ -239,9 +239,9 @@ a {
 	margin: 0 auto;
 	padding-top: 65px;
 
-	@include breakpoint (720px){
-		max-width: 170px;
-	}
+	// @include breakpoint (720px){
+	// 	max-width: 170px;
+	// }
 
 	@include breakpoint ($medium){
 		max-width: 220px;
@@ -265,12 +265,13 @@ a {
 	margin-bottom: 80px;
 	text-align:center;
 
-	@include breakpoint (720px){
-		max-width: 300px;
-	}
+	// @include breakpoint (720px){
+	// 	max-width: 300px;
+	// }
 
 	@include breakpoint ($medium) {
 		max-width: 350px;
+
 		
 	}
 
@@ -281,16 +282,16 @@ a {
 
 
 .landing_register{
-	max-width: 120px;
+	max-width: 120px; 	 	
 	margin: 10px auto;
 	display: block;
 	padding: 25px 0;
 	transition: all 0.5s ease;
 
-	@include breakpoint (720px){
-		max-width: 140px;
-		margin: 20px auto;
-	}
+	// @include breakpoint (720px){
+	// 	max-width: 140px;
+	// 	margin: 20px auto;
+	// }
 
 	@include breakpoint ($medium) {
 		max-width: 160px;
@@ -303,67 +304,6 @@ a {
 	&:hover{
 		opacity: 0.7;
 	}
-}
-
-
-.landing_bottom_nav{
-	border-top: 2px solid $pink;
-	position: fixed;
-	width: 100%;
-	bottom: 0px;
-	z-index: 1000;
-	background-color: black;
-	ul {
-		margin: 0;
-		padding: 0;
-		list-style: none;
-		background: $brown;
-		padding: 20px 0;
-		@include clearfix;
-
-		@include breakpoint ($medium) {
-		padding: 0;
-		}	
-
-	}
-
-	li{
-		margin-bottom: 10px;
-		@include breakpoint ($medium) {
-			display: block;
-			float: left;
-			width: 20%;
-			margin: 0;
-			padding: 20px 0;
-
-		}	
-	
-	}
-
-	a{
-		display: block;
-		padding: 10px;
-		text-align: center;
-		font-size: 0.875em;
-		color: $pink;
-		text-decoration: none;
-		transition: all 0.5s ease;
-		@include breakpoint ($small){
-			font-size: 1em;
-		}
-
-
-		&:hover {
-			color: $blue;
-			background: $pink;
-			// @include linear-gradient($brown, $pink);
-
-			@include breakpoint ($medium){
-				background: none;
-			}
-		}
-	}
-
 }
 
 
@@ -419,14 +359,14 @@ a {
 	max-width: 150px;
 	margin: 0 auto;
 	padding-top: 65px;
-	transition: all 0.5s ease;
+	// transition: background 0.5s ease;
 	
 	a{
 		display: block;
 	}
 
 	@include breakpoint ($medium){
-		max-width: 18%;
+		max-width: 15%;
 		margin: 0;
 		float: left;
 		padding: 0;
@@ -436,10 +376,6 @@ a {
 			opacity: 0.7;
 		}
 	}
-
-	// @include breakpoint ($large){
-	// 	max-width: 19%;
-	// }
 
 	@include breakpoint (1200px){
 		max-width: 15%;
@@ -542,17 +478,22 @@ a {
 	
 	@include breakpoint ($medium){
 		float: right;
-		max-width: 170px;
+		max-width: 17%;
 
 		img{
 			margin: 0;
 		}
+	}
+
+	@include breakpoint ($large){
+		max-width: 15%;
 	}	
 }
 
 
 
 .main_navigation > .button{
+	color: white;
 	@include breakpoint ($medium){
 		display: none;
 	}
@@ -562,14 +503,21 @@ a {
 	position:fixed;
 	bottom: 0;
 	width: 100%;
-	border-top: 1px solid $pink;
-	background-color: black;
+	border-top: 3px solid $pink;
+	background-color: $blue;
 	z-index: 1000;
 
 	@include breakpoint ($medium){
-		position: initial;
+		position: static;
 		top:0;
-		width: 100%;
+		width: 85%;
+		float: left;
+		border-bottom: 1px solid $pink;
+		border-top: none;
+	}
+
+	@include breakpoint ($large){
+		width: 85%;
 	}
 }
 
@@ -579,12 +527,11 @@ a {
 
 .mainNav {
 	@include breakpoint ($medium){
-		width: 82%;
-		float: left;
+		
 	}
-	@include breakpoint (1200px){
-		width: 85%;
-	}
+	// @include breakpoint (1200px){
+	// 	width: 85%;
+	// }
 
 	ul {
 		margin: 0;
@@ -596,6 +543,7 @@ a {
 
 		@include breakpoint ($medium) {
 			text-align: center;
+			
 		}
 
 	}
@@ -1158,9 +1106,7 @@ a {
 	background: url(../img/featuredspeakers.png) no-repeat; 
 	background-size: cover;
 	margin: 0;
-	padding: 0; 
-	border-bottom: 2px solid $pink;
-	// height: 555px;
+	padding: 0;
 
 	@include breakpoint ($medium){
 		height: 700px;
@@ -1206,6 +1152,7 @@ a {
 	padding-top: 30px;
 	padding-bottom: 30px;
 	border-bottom: 2px solid $pink;
+	border-top: 2px solid $pink;
 	text-align: center;
 	font-size: 2.5em;
 	@include breakpoint ($medium){
@@ -1714,7 +1661,7 @@ a {
 .scheduleTitle{
 	font-family: $sans2;
 	color: white;
-	font-size: 2em;
+	font-size: 2.5em;
 	text-align: center;
 	border-top: 2px solid $pink;
 	padding: 30px 0;
@@ -1726,7 +1673,6 @@ a {
 		padding: 30px 2% 0 0;
 		clear: both;
 		border-bottom: 2px solid $pink;
-		border-top: none;
 	}
 }
 
@@ -2147,6 +2093,76 @@ nav {
 	
 
 	
+}
+
+
+.landing_bottom_nav{
+	border-top: 2px solid $pink;
+	position: fixed;
+	width: 100%;
+	bottom: 0px;
+	z-index: 1000;
+	background-color: black;
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		background: $brown;
+		padding: 20px 0;
+		@include clearfix;
+
+		@include breakpoint ($medium) {
+		padding: 0;
+		}	
+
+	}
+
+	li{
+		margin-bottom: 10px;
+		@include breakpoint ($medium) {
+			display: block;
+			float: left;
+			width: 20%;
+			margin: 0;
+			padding: 30px 0;
+
+		}	
+	
+	}
+
+	a{
+		display: block;
+		padding: 10px;
+		text-align: center;
+		font-size: 0.875em;
+		color: $pink;
+		text-decoration: none;
+		transition: all 0.5s ease;
+		@include breakpoint ($small){
+			font-size: 1em;
+		}
+
+
+		&:hover {
+			color: $blue;
+			background: $pink;
+			// @include linear-gradient($brown, $pink);
+
+			@include breakpoint ($medium){
+				background: none;
+			}
+		}
+	}
+
+	.main_navigation{
+		@include breakpoint ($medium){
+			width: 100%;
+		}
+		@include breakpoint ($large){
+			width: 100%;
+		}
+	}
+
 }
 
 

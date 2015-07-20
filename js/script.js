@@ -5,7 +5,7 @@ $(function(){
 	var nav_list          = $( ".main_nav" );
 	var $win              = $( window );
 
-	var breakpoint = 900;
+	var breakpoint = 899;
 
 	var menu_visible = false;
 

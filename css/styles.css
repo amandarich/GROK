@@ -135,9 +135,6 @@ a {
   max-width: 150px;
   margin: 0 auto;
   padding-top: 65px; }
-  @media screen and (min-width: 720px) {
-    .landing_logo {
-      max-width: 170px; } }
   @media screen and (min-width: 900px) {
     .landing_logo {
       max-width: 220px; } }
@@ -152,9 +149,6 @@ a {
   margin: 0 auto;
   margin-bottom: 80px;
   text-align: center; }
-  @media screen and (min-width: 720px) {
-    .landing_quote {
-      max-width: 300px; } }
   @media screen and (min-width: 900px) {
     .landing_quote {
       max-width: 350px; } }
@@ -167,10 +161,6 @@ a {
   display: block;
   padding: 25px 0;
   transition: all 0.5s ease; }
-  @media screen and (min-width: 720px) {
-    .landing_register {
-      max-width: 140px;
-      margin: 20px auto; } }
   @media screen and (min-width: 900px) {
     .landing_register {
       max-width: 160px; } }
@@ -178,53 +168,6 @@ a {
     width: 100%; }
   .landing_register:hover {
     opacity: 0.7; }
-
-.landing_bottom_nav {
-  border-top: 2px solid #f0594c;
-  position: fixed;
-  width: 100%;
-  bottom: 0px;
-  z-index: 1000;
-  background-color: black; }
-  .landing_bottom_nav ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    background: #252525;
-    padding: 20px 0; }
-    .landing_bottom_nav ul:after {
-      content: "";
-      display: table;
-      clear: both; }
-    @media screen and (min-width: 900px) {
-      .landing_bottom_nav ul {
-        padding: 0; } }
-  .landing_bottom_nav li {
-    margin-bottom: 10px; }
-    @media screen and (min-width: 900px) {
-      .landing_bottom_nav li {
-        display: block;
-        float: left;
-        width: 20%;
-        margin: 0;
-        padding: 20px 0; } }
-  .landing_bottom_nav a {
-    display: block;
-    padding: 10px;
-    text-align: center;
-    font-size: 0.875em;
-    color: #f0594c;
-    text-decoration: none;
-    transition: all 0.5s ease; }
-    @media screen and (min-width: 600px) {
-      .landing_bottom_nav a {
-        font-size: 1em; } }
-    .landing_bottom_nav a:hover {
-      color: #1ca3dc;
-      background: #f0594c; }
-      @media screen and (min-width: 900px) {
-        .landing_bottom_nav a:hover {
-          background: none; } }
 
 .featured_picture_2 {
   background: url(../img/featuredwhat3.png) no-repeat;
@@ -250,13 +193,12 @@ a {
 .what_logo {
   max-width: 150px;
   margin: 0 auto;
-  padding-top: 65px;
-  transition: all 0.5s ease; }
+  padding-top: 65px; }
   .what_logo a {
     display: block; }
   @media screen and (min-width: 900px) {
     .what_logo {
-      max-width: 18%;
+      max-width: 15%;
       margin: 0;
       float: left;
       padding: 0; }
@@ -344,37 +286,41 @@ a {
   @media screen and (min-width: 900px) {
     .what_register {
       float: right;
-      max-width: 170px; }
+      max-width: 17%; }
       .what_register img {
         margin: 0; } }
+  @media screen and (min-width: 1024px) {
+    .what_register {
+      max-width: 15%; } }
 
-@media screen and (min-width: 900px) {
-  .main_navigation > .button {
-    display: none; } }
+.main_navigation > .button {
+  color: white; }
+  @media screen and (min-width: 900px) {
+    .main_navigation > .button {
+      display: none; } }
 
 .main_navigation {
   position: fixed;
   bottom: 0;
   width: 100%;
-  border-top: 1px solid #f0594c;
-  background-color: black;
+  border-top: 3px solid #f0594c;
+  background-color: #1ca3dc;
   z-index: 1000; }
   @media screen and (min-width: 900px) {
     .main_navigation {
-      position: initial;
+      position: static;
       top: 0;
-      width: 100%; } }
+      width: 85%;
+      float: left;
+      border-bottom: 1px solid #f0594c;
+      border-top: none; } }
+  @media screen and (min-width: 1024px) {
+    .main_navigation {
+      width: 85%; } }
 
 .main_navigation h5 {
   font-size: 1.5em; }
 
-@media screen and (min-width: 900px) {
-  .mainNav {
-    width: 82%;
-    float: left; } }
-@media screen and (min-width: 1200px) {
-  .mainNav {
-    width: 85%; } }
 .mainNav ul {
   margin: 0;
   padding: 0;
@@ -785,8 +731,7 @@ a {
   background: url(../img/featuredspeakers.png) no-repeat;
   background-size: cover;
   margin: 0;
-  padding: 0;
-  border-bottom: 2px solid #f0594c; }
+  padding: 0; }
   @media screen and (min-width: 900px) {
     .featured_picture_3 {
       height: 700px;
@@ -823,6 +768,7 @@ a {
   padding-top: 30px;
   padding-bottom: 30px;
   border-bottom: 2px solid #f0594c;
+  border-top: 2px solid #f0594c;
   text-align: center;
   font-size: 2.5em; }
   @media screen and (min-width: 900px) {
@@ -1217,7 +1163,7 @@ a {
 .scheduleTitle {
   font-family: NeoRetroFill;
   color: white;
-  font-size: 2em;
+  font-size: 2.5em;
   text-align: center;
   border-top: 2px solid #f0594c;
   padding: 30px 0;
@@ -1229,8 +1175,7 @@ a {
       text-align: right;
       padding: 30px 2% 0 0;
       clear: both;
-      border-bottom: 2px solid #f0594c;
-      border-top: none; } }
+      border-bottom: 2px solid #f0594c; } }
 
 .scheduleWrapper {
   background-image: url(../img/images/spots_03.png);
@@ -1548,5 +1493,58 @@ nav:after {
   .footerNav {
     float: right;
     width: 75%; } }
+
+.landing_bottom_nav {
+  border-top: 2px solid #f0594c;
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
+  z-index: 1000;
+  background-color: black; }
+  .landing_bottom_nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background: #252525;
+    padding: 20px 0; }
+    .landing_bottom_nav ul:after {
+      content: "";
+      display: table;
+      clear: both; }
+    @media screen and (min-width: 900px) {
+      .landing_bottom_nav ul {
+        padding: 0; } }
+  .landing_bottom_nav li {
+    margin-bottom: 10px; }
+    @media screen and (min-width: 900px) {
+      .landing_bottom_nav li {
+        display: block;
+        float: left;
+        width: 20%;
+        margin: 0;
+        padding: 30px 0; } }
+  .landing_bottom_nav a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 0.875em;
+    color: #f0594c;
+    text-decoration: none;
+    transition: all 0.5s ease; }
+    @media screen and (min-width: 600px) {
+      .landing_bottom_nav a {
+        font-size: 1em; } }
+    .landing_bottom_nav a:hover {
+      color: #1ca3dc;
+      background: #f0594c; }
+      @media screen and (min-width: 900px) {
+        .landing_bottom_nav a:hover {
+          background: none; } }
+  @media screen and (min-width: 900px) {
+    .landing_bottom_nav .main_navigation {
+      width: 100%; } }
+  @media screen and (min-width: 1024px) {
+    .landing_bottom_nav .main_navigation {
+      width: 100%; } }
 
 /*# sourceMappingURL=styles.css.map */
